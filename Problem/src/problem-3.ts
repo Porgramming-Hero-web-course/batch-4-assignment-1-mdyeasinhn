@@ -3,12 +3,12 @@
 
 
     function countWordOccurrences(sentence: string, word: string): number {
-        const count = sentence.toLowerCase().split(word.toLowerCase());
+        const count = sentence.split(word);
         return count.length - 1;
     }
 
     
-    //console.log(countWordOccurrences("TypeScript is great. typescript I love TypeScript!", "typescript"));
+   // console.log(countWordOccurrences("TypeScript is great. typescript I love TypeScript!", "typescript"));
 
 
     //
