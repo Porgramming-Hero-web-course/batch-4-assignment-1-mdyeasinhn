@@ -3,12 +3,10 @@
 
 
 
-    function validateKeys<T>(object: T, keys: (keyof T)[]): boolean {
+    function validateKeys<T extends object>(object: T, keys: (keyof T)[]): boolean {
         const result = keys.every(key => key in object);
         return result;
     }
-
-
 
 
 
