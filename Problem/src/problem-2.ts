@@ -3,7 +3,8 @@
 
 
     const removeDuplicates = (input: number[]): number[] => {
-        return [...new Set(input)];
+        const result = [...new Set(input)];
+        return result
     }
 
     //console.log(removeDuplicates([1, 3, 4, 2, 2, 3, 4, 5, 6,]));

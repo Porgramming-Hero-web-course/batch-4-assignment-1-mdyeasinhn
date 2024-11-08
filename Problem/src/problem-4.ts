@@ -15,25 +15,28 @@
 
     const calculateShapeArea = (shape: Area): number => {
         if (shape.shape === 'circle') {
-            return Math.PI * shape.radius * shape.radius
+            const result = Math.PI * shape.radius * shape.radius
+            return result
+
 
         } else if (shape.shape === 'rectangle') {
-            return shape.width * shape.height;
+            const result= shape.width * shape.height;
+            return result
         }
         throw new Error("shape is undifiend");
     }
 
-    
-    // const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
-    // console.log(circleArea);
 
-    // const rectangleArea = calculateShapeArea({
-    //     shape: "rectangle",
-    //     width: 4,
-    //     height: 6,
-    //   });
+    const circleArea = calculateShapeArea({ shape: "circle", radius: 5 });
+    console.log(circleArea);
 
-    //   console.log(rectangleArea);
+    const rectangleArea = calculateShapeArea({
+        shape: "rectangle",
+        width: 4,
+        height: 6,
+    });
+
+    console.log(rectangleArea);
 
 
     //

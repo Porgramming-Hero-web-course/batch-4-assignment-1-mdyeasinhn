@@ -3,8 +3,9 @@
 
 
     function countWordOccurrences(sentence: string, word: string): number {
-        const count = sentence.split(word);
-        return count.length - 1;
+        const count = sentence.toLowerCase().split(word.toLowerCase());
+        const result = count.length - 1;
+        return result
     }
 
     
